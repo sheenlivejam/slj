@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/slj-app/static/css/main.f36b0057.css",
-    "main.js": "/slj-app/static/js/main.7ab759cf.js",
+    "main.js": "/slj-app/static/js/main.d298827e.js",
     "static/js/453.383b4ef5.chunk.js": "/slj-app/static/js/453.383b4ef5.chunk.js",
     "static/media/SLJ-background.png": "/slj-app/static/media/SLJ-background.02ce0b13dcf2d4e7ea43.png",
     "static/media/SLJ-poster.png": "/slj-app/static/media/SLJ-poster.339ddf02deb803b8f26a.png",
     "index.html": "/slj-app/index.html",
     "main.f36b0057.css.map": "/slj-app/static/css/main.f36b0057.css.map",
-    "main.7ab759cf.js.map": "/slj-app/static/js/main.7ab759cf.js.map",
+    "main.d298827e.js.map": "/slj-app/static/js/main.d298827e.js.map",
     "453.383b4ef5.chunk.js.map": "/slj-app/static/js/453.383b4ef5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f36b0057.css",
-    "static/js/main.7ab759cf.js"
+    "static/js/main.d298827e.js"
   ]
 }
