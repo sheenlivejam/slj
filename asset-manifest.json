@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/slj/static/css/main.035e5081.css",
-    "main.js": "/slj/static/js/main.fd415410.js",
-    "static/js/453.383b4ef5.chunk.js": "/slj/static/js/453.383b4ef5.chunk.js",
-    "static/media/SLJ-background.png": "/slj/static/media/SLJ-background.02ce0b13dcf2d4e7ea43.png",
-    "static/media/SLJ-poster.png": "/slj/static/media/SLJ-poster.339ddf02deb803b8f26a.png",
-    "index.html": "/slj/index.html",
-    "main.035e5081.css.map": "/slj/static/css/main.035e5081.css.map",
-    "main.fd415410.js.map": "/slj/static/js/main.fd415410.js.map",
-    "453.383b4ef5.chunk.js.map": "/slj/static/js/453.383b4ef5.chunk.js.map"
+    "main.css": "/static/css/main.8ecef514.css",
+    "main.js": "/static/js/main.f5397fae.js",
+    "static/js/453.383b4ef5.chunk.js": "/static/js/453.383b4ef5.chunk.js",
+    "static/media/SLJ-background.png": "/static/media/SLJ-background.02ce0b13dcf2d4e7ea43.png",
+    "static/media/SLJ-poster.png": "/static/media/SLJ-poster.339ddf02deb803b8f26a.png",
+    "index.html": "/index.html",
+    "main.8ecef514.css.map": "/static/css/main.8ecef514.css.map",
+    "main.f5397fae.js.map": "/static/js/main.f5397fae.js.map",
+    "453.383b4ef5.chunk.js.map": "/static/js/453.383b4ef5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.035e5081.css",
-    "static/js/main.fd415410.js"
+    "static/css/main.8ecef514.css",
+    "static/js/main.f5397fae.js"
   ]
 }
