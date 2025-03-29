@@ -8,20 +8,22 @@ function App() {
   const [showScheduleSubmenu, setShowScheduleSubmenu] = useState(false);
 
   // Event data
-  const events = [
+  const _events = [
     { 
       month: "Oct", 
       year: 2024, 
       theme: "Blues", 
       isPast: true,
       songs: [
-        "Sweet Home Chicago - Robert Johnson",
-        "The Thrill Is Gone - B.B. King",
-        "Crossroad Blues - Robert Johnson",
-        "Stormy Monday - T-Bone Walker",
-        "Pride and Joy - Stevie Ray Vaughan"
+        "Stormy Monday - Allman Brothers Ban",
+        "New Coat of Paint - Tom Waits",
+        "Mustang Sally - Wilson Pickett",
+        "Got My Mojo Working - Elvis Presley",
+        "San Francisco Bay Blues - Eric Clapton",
+        "Where Did You Sleep Last Night - Lead Belly",
+        "I'm Your Hoochie Coochie Man - Muddy Waters",
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example1"
+      spotifyLink: "https://open.spotify.com/playlist/6OyR3JKzfrdN4BM6FtOvLL?si=b07b70a3fe4a481d"
     },
     { 
       month: "Nov", 
@@ -29,13 +31,15 @@ function App() {
       theme: "Country", 
       isPast: true,
       songs: [
-        "Jolene - Dolly Parton",
+        "Coats of Many Colours - Dolly Parton",
         "Ring of Fire - Johnny Cash",
-        "Crazy - Patsy Cline",
-        "Friends in Low Places - Garth Brooks",
+        "Lost Highway - Hank Williams",
+        "On the Road Again - Willie Nelson",
+        "Rhineston Cowboy - Glen Campbell",
+        "Theme from Rawhide - Frankie Laine",
         "Stand By Your Man - Tammy Wynette"
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example2"
+      spotifyLink: "https://open.spotify.com/playlist/51YcLIz4jTNOh9qirrZY5x?si=e7cdf4effc5c4e44"
     },
     { 
       month: "Dec", 
@@ -43,13 +47,14 @@ function App() {
       theme: "Funky", 
       isPast: true,
       songs: [
-        "Superstition - Stevie Wonder",
-        "Play That Funky Music - Wild Cherry",
-        "Get Up (I Feel Like Being a) Sex Machine - James Brown",
-        "Pick Up the Pieces - Average White Band",
-        "Brick House - Commodores"
+        "I Wish - Stevie Wonder",
+        "I Got You (I Feel Good) - James Brown",
+        "Steal My Kisses - Ben Harper",
+        "The Ghetto - Donny Hathaway",
+        "Funky Town - Lipps Inc",
+        "You Sexy Thing - Hot Chocolate"
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example3"
+      spotifyLink: "https://open.spotify.com/playlist/24HXDHRmItAfdv30IY2as2?si=59b57c2e71264e27"
     },
     { 
       month: "Jan", 
@@ -57,13 +62,15 @@ function App() {
       theme: "Beatles", 
       isPast: true,
       songs: [
-        "Let It Be - The Beatles",
+        "Lady Madonna - The Beatles",
         "Hey Jude - The Beatles",
-        "Come Together - The Beatles",
-        "Yesterday - The Beatles",
-        "A Hard Day's Night - The Beatles"
+        "Here Comes the Sun - The Beatles",
+        "Back in the USSR - The Beatles",
+        "Saw Her Standing There - The Beatles",
+        "Ob-La-Di, Ob La Da - The Beatles",
+        "Day Tripper - The Beatles",
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example4"
+      spotifyLink: "https://open.spotify.com/playlist/3GNSbltQZyjUxtK86Vj0Zx?si=cec5812cc53c4834"
     },
     { 
       month: "Feb", 
@@ -71,13 +78,15 @@ function App() {
       theme: "Reggae", 
       isPast: true,
       songs: [
-        "No Woman, No Cry - Bob Marley",
+        "54-46 was my number - Toots and the Maytals",
         "Three Little Birds - Bob Marley",
-        "I Shot the Sheriff - Bob Marley",
-        "Redemption Song - Bob Marley",
-        "Red Red Wine - UB40"
+        "I Shot the Sheriff - Eric Clapton",
+        "A Message To You Rudy - The Specials",
+        "Red Red Wine - UB40",
+        "The Tide is High - Blondie",
+        "Cupid - Amy Winehouse"
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example5"
+      spotifyLink: "https://open.spotify.com/playlist/6YrbJiu1oFhc0cIawwKsWo?si=7dab3e1f258a441a"
     },
     { 
       month: "Mar", 
@@ -86,17 +95,20 @@ function App() {
       isPast: false,
       songs: [
         "Blowin' in the Wind - Bob Dylan",
-        "The Times They Are a-Changin' - Bob Dylan",
-        "This Land Is Your Land - Woody Guthrie",
-        "City of New Orleans - Arlo Guthrie",
-        "If I Had a Hammer - Pete Seeger"
+        "Roll Away Your Stone - Mumford And Sons",
+        "Irish Rover - The Dubliners & The Pogues",
+        "Wild Rover - The Pogues",
+        "Whiskey In the Jar - The Dubliners & The Pogues",
+        "Walking On the Waves - Skipinnish",
+        "Leaving On A Jet Plane - John Denver",
+        "The Galway Girl - Mundy, Sharon Shannon"
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example6"
+      spotifyLink: "https://open.spotify.com/playlist/5ftNtubPnsaVhiBlO1hObt?si=9d113f23edbf4f96"
     },
     { 
       month: "Apr", 
       year: 2025, 
-      theme: "Paul Simon (and Garfunkel!)", 
+      theme: "Paul Simon", 
       isPast: false,
       songs: [
         "Mrs Robinson - Simon & Garfunkel",
@@ -106,19 +118,20 @@ function App() {
         "Graceland - Paul Simon",
         "50 Ways to Leave Your Lover - Paul Simon"
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example7"
+      spotifyLink: "https://open.spotify.com/playlist/1EFiM08lezscybvXPtxT1w?si=ec1da7d433b14701"
     },
     { 
       month: "May", 
       year: 2025, 
-      theme: "Best of SLJ (gig set!)", 
+      theme: "Best of SLJ!)", 
       isPast: false,
       songs: [
-        "Best Song 1 - Artist 1",
-        "Best Song 2 - Artist 2",
-        "Best Song 3 - Artist 3",
-        "Best Song 4 - Artist 4",
-        "Best Song 5 - Artist 5"
+        "New Coat of Paint",
+        "Sanfrancisco Bay Blues",
+        "Message to you Rudy",
+        "Ghetto",
+        "Lady Madonna",
+        "Rhineston Cowby",
       ],
       spotifyLink: "https://open.spotify.com/playlist/example8"
     },
@@ -132,6 +145,7 @@ function App() {
         "Don't Look Back in Anger - Oasis",
         "Champagne Supernova - Oasis",
         "Live Forever - Oasis",
+        "Half The World Away - Oasis",
         "Stop Crying Your Heart Out - Oasis"
       ],
       spotifyLink: "https://open.spotify.com/playlist/example9"
@@ -236,11 +250,40 @@ function App() {
     }
   ];
 
+  const events = _events.map(item => {
+    const monthMap = {
+      "Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6,
+      "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12
+    };
+    const monthIndex = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"].indexOf(item.month);
+    // const monthIndex = monthMap[item.month];
+    const date = new Date(item.year, monthIndex, 1);
+    const dayOfWeek = date.getDay();
+    const daysUntilFirstThursday = (4 - dayOfWeek + 7) % 7;
+    const secondThursday = new Date(item.year, monthIndex, 1 + daysUntilFirstThursday + 7);
+    
+    const day = secondThursday.getDate();
+    const suffix = (day === 1 || day === 21 || day === 31) ? "st" : (day === 2 || day === 22) ? "nd" : (day === 3 || day === 23) ? "rd" : "th";
+    
+    const secondThurs = `${item.month} ${day}${suffix}`;
+
+    // const itemDate = new Date(item.year, monthIndex, item.day);
+    const currentDate = new Date();
+    // const isPast = new Date(item.year, monthIndex, item.day) < currentDate;
+    const isPast = secondThursday < currentDate;
+    console.log(currentDate);
+    // console.log(itemDate);
+    // console.log(isPast2);
+    return { ...item, secondThurs, day, isPast };
+  });
+  // console.log(events)
+
   // Find next upcoming event
   useEffect(() => {
     const currentDate = new Date();
     const currentMonth = currentDate.getMonth() + 1; // JavaScript months are 0-indexed
     const currentYear = currentDate.getFullYear();
+    const currentDay = currentDate.getFullYear();
     
     const monthMap = {
       "Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6,
@@ -249,9 +292,10 @@ function App() {
     
     // Find the next upcoming event
     let upcomingEvent = events.find(event => {
-      return (event.year > currentYear) || 
-             (event.year === currentYear && monthMap[event.month] >= currentMonth);
+      // return new Date(event.year, monthMap[event.month]-1, event.day) >= currentDate;
+      return !event.isPast;
     });
+    
     
     // If no upcoming event found, default to the last event
     if (!upcomingEvent && events.length > 0) {
@@ -262,7 +306,11 @@ function App() {
     if (!selectedDate && upcomingEvent) {
       setSelectedDate(`${upcomingEvent.month} ${upcomingEvent.year}`);
     }
+
+    console.log(upcomingEvent);
+    console.log(selectedDate);
   }, [selectedDate, events]);
+
 
   const handleScheduleClick = () => {
     setShowScheduleSubmenu(!showScheduleSubmenu);
@@ -305,7 +353,8 @@ function App() {
                   className="submenu-item"
                   onClick={() => handleDateClick(event.month, event.year)}
                 >
-                  {event.month} {event.year} - {event.theme}
+                  {/* {event.month} {event.year} - {event.theme} */}
+                  {event.secondThurs} - {event.theme}
                 </div>
               ))}
             </div>
@@ -324,37 +373,55 @@ function App() {
               alt="Sheen Live Jam Poster" 
               className="poster-image"
             /> */}
+            
             <div className="info-boxes">
               <div className="info-box">
-                <p>House band available for<br />backing tracks & jam</p>
-                <p>Small guitar & bass amps available<br />plus keyboard, mic & cajon</p>
-                <p>All instruments welcome<br />from harmonicas & trumpets,<br />to violins and spoons</p>
+                <p>Whether you're a seasoned musician<br /> or just love to jam, come along every second Thursday of the month for an evening of great tunes and community vibes</p>
+                
+                {/* <p>All instruments welcome<br />from harmonicas & trumpets,<br />to violins and spoons</p> */}
               </div>
               <div className="info-box">
-                <p>An evening of low amp<br />music & camaraderie<br />For local music lovers of all abilities<br />Emphasis on creativity<br />and conversation</p>
+                <p>Bring your instrument, your voice, or just your love for music! Everyone' welcome—whether you're performing or simply enjoying the show.</p>
+                <p>House band available for<br />backing tracks & jam</p>
               </div>
               <div className="info-box highlight">
                 <h3>JAM of the Month</h3>
                 <p>Themed set of songs<br />Led by house band<br />Available for ALL to play or sing on</p>
-                <p>See website for set details</p>
+                <p>See Schedule and spotify lists for set details</p>
               </div>
               <div className="event-details">
                 <h3>Event Details</h3>
                 <p><strong>Timings:</strong><br />
-                   7-8pm (open mic)<br />
-                   8-9pm (jam of the week)<br />
-                   9-10pm (open mic)</p>
+                   7-8:30pm (open mic)<br />
+                   8:30-9:30pm (jam of the week)<br />
+                   9:30-10:30pm (open mic)</p>
                 <p><strong>Location:</strong><br />
                    @The Home Guard Club House<br />
                    76a Richmond Park Road</p>
                 <p><strong>Entrance:</strong><br />
-                   On the door £3 (non-members)<br />
-                   Free for members</p>
+                   Members - Free, Guess £3 </p>
               </div>
               <div className="social-links">
                 <p>Instagram - @sheen_livejam</p>
-                <p>Spotify - SheenLiveJam</p>
+                {/* <p>Spotify - SheenLiveJam</p> */}
+                
                 <p>more info - contact Pat: sheenlivejam@gmail.com</p>
+                <a 
+                  href="https://open.spotify.com/playlist/3xKr0qjSrBBy0RUVVz3BAk?si=891e0a1731e34590"
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="spotify-link"
+                  >
+                  Spotify - All Jam songs to date
+                </a>
+                <a 
+                  href="https://open.spotify.com/playlist/1EFiM08lezscybvXPtxT1w?si=845e13d8bc844ece"
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="spotify-link"
+                  >
+                  Spotify - Upcoming Jam set
+                </a>
               </div>
             </div>
           </div>
@@ -362,7 +429,8 @@ function App() {
         
         {activeSection === 'schedule' && selectedEvent && (
           <div className="schedule-section">
-            <h2>{selectedEvent.month} {selectedEvent.year} - {selectedEvent.theme}</h2>
+            {/* <h2>{selectedEvent.month} {selectedEvent.year} - {selectedEvent.theme}</h2> */}
+            <h2>{selectedEvent.secondThurs} - {selectedEvent.theme}</h2>
             <div className="song-list">
               <h3>Set List:</h3>
               <ul>
@@ -380,9 +448,9 @@ function App() {
               </a>
             </div>
             <div className="event-details-mini">
-              <p><strong>Timings:</strong> 7-8pm (open mic), 8-9pm (jam), 9-10pm (open mic)</p>
+              <p><strong>Timings:</strong> 7-8:30pm (open mic), 8:30-9:30pm (jam), 9:30-10:30pm (open mic)</p>
               <p><strong>Location:</strong> The Home Guard Club House, 76a Richmond Park Road</p>
-              <p><strong>Entrance:</strong> £3 non-members, Free for members</p>
+              <p><strong>Entrance:</strong> Members - Free, Guests £3</p>
             </div>
           </div>
         )}
