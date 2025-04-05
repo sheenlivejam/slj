@@ -193,6 +193,23 @@ body {
   transform: translateY(-2px);
 }
 
+.insta-link {
+  display: inline-block;
+  background-color: #b91d8d;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.insta-link:hover {
+  background-color: #9c1659;
+  transform: translateY(-2px);
+}
+
 .event-details-mini {
   margin-top: 30px;
   padding-top: 20px;

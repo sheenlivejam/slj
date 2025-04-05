@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import poster from './SLJ-poster.png'
+import PhotoGallery from './PhotoGallery';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [selectedDate, setSelectedDate] = useState(null);
   const [showScheduleSubmenu, setShowScheduleSubmenu] = useState(false);
-
+  // const p = './SLJ-poster.png'
   // Event data
   const _events = [
     { 
@@ -123,7 +124,7 @@ function App() {
     { 
       month: "May", 
       year: 2025, 
-      theme: "Best of SLJ!)", 
+      theme: "Best of SLJ!", 
       isPast: false,
       songs: [
         "New Coat of Paint",
@@ -131,7 +132,7 @@ function App() {
         "Message to you Rudy",
         "Ghetto",
         "Lady Madonna",
-        "Rhineston Cowby",
+        "Rhinestone Cowboy",
       ],
       spotifyLink: "https://open.spotify.com/playlist/example8"
     },
@@ -474,24 +475,28 @@ function App() {
         )}
         
         {activeSection === 'photos' && (
-          <div className="photos-section">
-            <h2>Photos</h2>
 
-            <p>Coming soon! Photos from our events will be displayed here.</p>
-            <div className="placeholder-grid">
-              {[1, 2, 3, 4, 5, 6].map(num => (
-                <div key={num} className="photo-placeholder">
-                  <p>Photo {num}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <PhotoGallery/>
+          // <div className="photos-section">
+          //   <h2>Photos</h2>
+
+          //   <p>Coming soon! Photos from our events will be displayed here.</p>
+          //   <div className="placeholder-grid">
+          //     {[1, 2, 3, 4, 5, 6].map(num => (
+          //       <div key={num} className="photo-placeholder">
+          //         <p>Photo {num}</p>
+          //       </div>
+          //     ))}
+          //   </div>
+          // </div>
         )}
-        {activeSection === 'poster' && (
+        {
+        
+        activeSection === 'poster' && (
           <div className="photos-section">
             <h2>Poster</h2>
             <img 
-              src={poster} 
+              src={poster}
               alt="Sheen Live Jam Poster" 
               className="poster-image"
             />
