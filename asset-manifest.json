@@ -1,17 +1,41 @@
 {
   "files": {
-    "main.css": "/slj/static/css/main.035e5081.css",
-    "main.js": "/slj/static/js/main.fd415410.js",
+    "main.css": "/slj/static/css/main.febafca2.css",
+    "main.js": "/slj/static/js/main.1385766c.js",
     "static/js/453.383b4ef5.chunk.js": "/slj/static/js/453.383b4ef5.chunk.js",
     "static/media/SLJ-background.png": "/slj/static/media/SLJ-background.02ce0b13dcf2d4e7ea43.png",
     "static/media/SLJ-poster.png": "/slj/static/media/SLJ-poster.339ddf02deb803b8f26a.png",
+    "static/media/LuAlexJon.jpeg": "/slj/static/media/LuAlexJon.75e32f1a8dc0a3d72b52.jpeg",
+    "static/media/HouseOfSLJ.jpeg": "/slj/static/media/HouseOfSLJ.e9b1fe3d8643de4ea9d9.jpeg",
+    "static/media/LiveJam2.jpeg": "/slj/static/media/LiveJam2.faf7bc493708d6592d32.jpeg",
+    "static/media/HeyJude1.jpeg": "/slj/static/media/HeyJude1.d71c9d9f1bbee4867067.jpeg",
+    "static/media/LiveJam1.jpeg": "/slj/static/media/LiveJam1.2389f1cc8c4dbb77f63f.jpeg",
+    "static/media/DennisArmond.jpeg": "/slj/static/media/DennisArmond.30ed49729d06441d853f.jpeg",
+    "static/media/AntBand.jpeg": "/slj/static/media/AntBand.7aaa70c749cc580a7ff1.jpeg",
+    "static/media/HereComesTheSun.jpeg": "/slj/static/media/HereComesTheSun.a16c67f2b222df57e0f8.jpeg",
+    "static/media/HeyJude2.jpeg": "/slj/static/media/HeyJude2.302f317891b380c3453f.jpeg",
+    "static/media/Audience.jpeg": "/slj/static/media/Audience.1504d90de235ec935767.jpeg",
+    "static/media/MiaOli.jpeg": "/slj/static/media/MiaOli.797cd55a971cff11a5bb.jpeg",
+    "static/media/GordonBass.jpeg": "/slj/static/media/GordonBass.ca5283eb2d840d1ad2d5.jpeg",
+    "static/media/Cowboys.jpeg": "/slj/static/media/Cowboys.a8f8392e9867fa49f241.jpeg",
+    "static/media/BrianAndBand.jpeg": "/slj/static/media/BrianAndBand.bcdb620732aedb3c4469.jpeg",
+    "static/media/Brian.jpeg": "/slj/static/media/Brian.44e91684802616bfa773.jpeg",
+    "static/media/BandNell.jpeg": "/slj/static/media/BandNell.5e57a45c92e7309c9808.jpeg",
+    "static/media/Dancing.jpeg": "/slj/static/media/Dancing.ed66d98d4c871987d161.jpeg",
+    "static/media/BrianPat.jpeg": "/slj/static/media/BrianPat.7e595162913cbfa3e803.jpeg",
+    "static/media/EdFiddle.jpeg": "/slj/static/media/EdFiddle.4a7bb98be22137c51bae.jpeg",
+    "static/media/Crowd.jpeg": "/slj/static/media/Crowd.32051942fafa73ef0119.jpeg",
+    "static/media/DennisCowboy.jpeg": "/slj/static/media/DennisCowboy.e89f61771aedbb24f479.jpeg",
+    "static/media/Kaviani.jpeg": "/slj/static/media/Kaviani.8ff36fcdc30148a8b013.jpeg",
+    "static/media/SoloPiano.jpeg": "/slj/static/media/SoloPiano.36a95ccc9c7876169c69.jpeg",
+    "static/media/PatCowboy.jpeg": "/slj/static/media/PatCowboy.aaf0449887cbea9ec10a.jpeg",
     "index.html": "/slj/index.html",
-    "main.035e5081.css.map": "/slj/static/css/main.035e5081.css.map",
-    "main.fd415410.js.map": "/slj/static/js/main.fd415410.js.map",
+    "main.febafca2.css.map": "/slj/static/css/main.febafca2.css.map",
+    "main.1385766c.js.map": "/slj/static/js/main.1385766c.js.map",
     "453.383b4ef5.chunk.js.map": "/slj/static/js/453.383b4ef5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.035e5081.css",
-    "static/js/main.fd415410.js"
+    "static/css/main.febafca2.css",
+    "static/js/main.1385766c.js"
   ]
 }
