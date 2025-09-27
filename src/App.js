@@ -124,17 +124,17 @@ function App() {
     { 
       month: "May", 
       year: 2025, 
-      theme: "Best of SLJ!", 
+      theme: "Mojo Remix!", 
       isPast: false,
       songs: [
-        "New Coat of Paint",
-        "Sanfrancisco Bay Blues",
-        "Message to you Rudy",
-        "Ghetto",
-        "Lady Madonna",
-        "Rhinestone Cowboy",
+        "New Coat of Paint (Fm)",
+        "Sanfrancisco Bay Blues (C)",
+        "Message to you Rudy - The Specials (C)",
+        "Here Comes the Sun - The Beatles (A)",
+        "Lady Madonna - The Beatles (A)",
+        "Rhinestone Cowboy - Glenn Campbell (C)",
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example8"
+      spotifyLink: "https://open.spotify.com/playlist/0PacHnNp2RpyTSUIF5tj8R?si=8f046d1de5054f3c"
     },
     { 
       month: "Jun", 
@@ -142,14 +142,14 @@ function App() {
       theme: "Oasis", 
       isPast: false,
       songs: [
-        "Wonderwall - Oasis",
+        "Cigarettes and Alcohol - Oasis",
         "Don't Look Back in Anger - Oasis",
-        "Champagne Supernova - Oasis",
-        "Live Forever - Oasis",
+        "Wonderwall - Oasis",
         "Half The World Away - Oasis",
-        "Stop Crying Your Heart Out - Oasis"
+        "Stand By Me - Oasis",
+        "Whatever - Oasis"
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example9"
+      spotifyLink: "https://open.spotify.com/playlist/4A1ZgkHTknEnKfXQvEPegS?si=d9109128ab6d4866"
     },
     { 
       month: "Jul", 
@@ -157,13 +157,14 @@ function App() {
       theme: "Tracy Chapman", 
       isPast: false,
       songs: [
-        "Fast Car - Tracy Chapman",
-        "Give Me One Reason - Tracy Chapman",
-        "Talkin' 'bout a Revolution - Tracy Chapman",
         "Baby Can I Hold You - Tracy Chapman",
-        "Crossroads - Tracy Chapman"
+        "Fast Car - Tracy Chapman",
+        "Talkin' 'bout a Revolution - Tracy Chapman",
+        "Give Me One Reason - Tracy Chapman (play like the Clapton/Tracy live version)",
+        "You're The One - Tracy Chapman",
+        "Mountains O Things - Tracy Chapman  (Let's play our own Rock Electric Guitar driven version)"
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example10"
+      spotifyLink: "https://open.spotify.com/playlist/6zfMieATTNcq32UpuveVWY?si=zbV7URdpQaCG1VRTLCLhGg&pi=v0Icehn5T9m9E"
     },
     { 
       month: "Aug", 
@@ -174,10 +175,11 @@ function App() {
         "Paint It Black - The Rolling Stones",
         "Satisfaction - The Rolling Stones",
         "Sympathy for the Devil - The Rolling Stones",
-        "Wild Horses - The Rolling Stones",
-        "Ruby Tuesday - The Rolling Stones"
+        "Jumpin' Jack Flash - The Rolling Stones",
+        "Ruby Tuesday - The Rolling Stones",
+        "You Can't Always Get What You Want - The Rolling Stones"
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example11"
+      spotifyLink: "https://open.spotify.com/playlist/1szhcQHfX3YjsGXhxWRbdH?si=a08e9c7277ed404a"
     },
     { 
       month: "Sep", 
@@ -187,11 +189,12 @@ function App() {
       songs: [
         "Rocket Man - Elton John",
         "Your Song - Elton John",
-        "Tiny Dancer - Elton John",
-        "Candle in the Wind - Elton John",
-        "Crocodile Rock - Elton John"
+        "Saturday Night - Elton John",
+        "Don't let the Sun go down on me - Elton John",
+        "Crocodile Rock - Elton John",
+        "I'm Still Standing - Elton John"
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example12"
+      spotifyLink: "https://open.spotify.com/playlist/5qIPWdykxhhnUQFBG0AQkW?si=8b81c0403c724f57"
     },
     { 
       month: "Oct", 
@@ -199,56 +202,265 @@ function App() {
       theme: "Fleetwood Mac", 
       isPast: false,
       songs: [
-        "Go Your Own Way - Fleetwood Mac",
-        "Dreams - Fleetwood Mac",
-        "Landslide - Fleetwood Mac",
+        "Don't Stop - Fleetwood Mac",
+        "Say You Love Me - Fleetwood Mac",
+        "Monday Morning - Fleetwood Mac",
+        "You Make Loving Fun - Fleetwood Mac",
         "Rhiannon - Fleetwood Mac",
         "The Chain - Fleetwood Mac"
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example13"
+      spotifyLink: "https://open.spotify.com/playlist/4nMIQCiPObFKvFGNlRVoCL?si=073a318a80884ac7"
     },
-    { 
-      month: "Nov", 
-      year: 2025, 
-      theme: "Folk", 
-      isPast: false,
-      songs: [
-        "The Boxer - Simon & Garfunkel",
-        "Both Sides Now - Joni Mitchell",
-        "Big Yellow Taxi - Joni Mitchell",
-        "Suzanne - Leonard Cohen",
-        "Hallelujah - Leonard Cohen"
+    {
+      "month": "Nov",
+      "year": 2025,
+      "theme": "The Cure",
+      "isPast": false,
+      "songs": [
+        "Just Like Heaven - The Cure",
+        "Lovesong - The Cure",
+        "Boys Don't Cry - The Cure",
+        "Close To Me - The Cure",
+        "Friday I'm In Love - The Cure",
+        "Pictures of You - The Cure"
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example14"
+      "spotifyLink": "https://open.spotify.com/playlist/34hVN963HetM9Wc0rPugcq?si=88228d3fb1aa446c"
     },
-    { 
-      month: "Dec", 
-      year: 2025, 
-      theme: "Xmas", 
-      isPast: false,
-      songs: [
+    {
+      "month": "Dec",
+      "year": 2025,
+      "theme": "Xmas",
+      "isPast": false,
+      "songs": [
         "Last Christmas - Wham!",
-        "All I Want for Christmas Is You - Mariah Carey",
-        "Rockin' Around the Christmas Tree - Brenda Lee",
+        "All I Want For Christmas Is You - Mariah Carey",
         "Fairytale of New York - The Pogues",
-        "Merry Xmas Everybody - Slade"
+        "Driving Home for Christmas - Chris Rea",
+        "Do They Know It's Christmas? - Band Aid"
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example15"
+      "spotifyLink": "https://open.spotify.com/playlist/37i9dQZF1DX0Yxoavh5qJV"
     },
-    { 
-      month: "Jan", 
-      year: 2026, 
-      theme: "New Year Special", 
-      isPast: false,
-      songs: [
-        "New Year's Day - U2",
-        "Auld Lang Syne - Traditional",
-        "It's the End of the World as We Know It - R.E.M.",
-        "New Year - Beach House",
-        "The Final Countdown - Europe"
+    {
+      "month": "Jan",
+      "year": 2026,
+      "theme": "Sting (and The Police)",
+      "isPast": false,
+      "songs": [
+        "Every Breath You Take - The Police",
+        "Englishman In New York - Sting",
+        "Roxanne - The Police",
+        "Fields of Gold - Sting",
+        "Message In A Bottle - The Police"
       ],
-      spotifyLink: "https://open.spotify.com/playlist/example16"
-    }
+      "spotifyLink": "https://open.spotify.com/playlist/37i9dQZF1DWWC4fpGJmfQm"
+    },
+    {
+      "month": "Feb",
+      "year": 2026,
+      "theme": "Paul Weller and The Jam",
+      "isPast": false,
+      "songs": [
+        "You Do Something To Me - Paul Weller",
+        "Changingman - Paul Weller",
+        "Broken Stones - Paul Weller",
+        "Wild Wood - Paul Weller",
+        "The Eton Rifles - The Jam"
+      ],
+      "spotifyLink": "https://open.spotify.com/playlist/2RVsODdZW3kK6uBvmp6dcF"
+    },
+    {
+      "month": "Mar",
+      "year": 2026,
+      "theme": "Pink Floyd and Pink",
+      "isPast": false,
+      "songs": [
+        "Comfortably Numb - Pink Floyd",
+        "Wish You Were Here - Pink Floyd",
+        "Another Break In the Wall - Pink Floyd",
+        "Just Give Me a Reason - Pink",
+        "Money - Pink Floyd",
+        "So What - Pink"
+      ],
+      "spotifyLink": "https://open.spotify.com/playlist/6gOYPMDAGCq4eYRUYsMTkB"
+    },
+    {
+      "month": "Apr",
+      "year": 2026,
+      "theme": "Country",
+      "isPast": false,
+      "songs": [
+        "Jolene - Dolly Parton",
+        "Take Me Home, Country Roads - John Denver",
+        "Before He Cheats - Carrie Underwood",
+        "Ring of Fire - Johnny Cash",
+        "Wagon Wheel - Darius Rucker"
+      ],
+      "spotifyLink": "https://open.spotify.com/playlist/37i9dQZF1DX13ZzXoot6Jq"
+    },
+    {
+      "month": "May",
+      "year": 2026,
+      "theme": "Synthpop Classics",
+      "isPast": false,
+      "songs": [
+        "Don't You Want Me - The Human League",
+        "Sweet Dreams (Are Made of This) - Eurythmics",
+        "Blue Monday - New Order",
+        "Tainted Love - Soft Cell",
+        "Enjoy the Silence - Depeche Mode"
+      ],
+      "spotifyLink": "https://open.spotify.com/playlist/37i9dQZF1DX11KGXrN36GT"
+    },
+  {
+    month: "Jun",
+    year: 2026,
+    theme: "REM",
+    isPast: false,
+    songs: [
+      "Losing My Religion - R.E.M.",
+      "Man on the Moon - R.E.M.",
+      "Everybody Hurts - R.E.M.",
+      "The One I Love - R.E.M.",
+      "It's the End of the World As We Know It (And I Feel Fine) - R.E.M.",
+      "Orange Crush - R.E.M."
+    ],
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO22khGL"
+  },
+  {
+    month: "Jul",
+    year: 2026,
+    theme: "U2",
+    isPast: false,
+    songs: [
+      "With or Without You - U2",
+      "Beautiful Day - U2",
+      "I Still Haven't Found What I'm Looking For - U2",
+      "Where the Streets Have No Name - U2",
+      "Sunday Bloody Sunday - U2",
+      "One - U2"
+    ],
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3O2kHt"
+  },
+  {
+    month: "Aug",
+    year: 2026,
+    theme: "George Michael & Wham",
+    isPast: false,
+    songs: [
+      "Careless Whisper - Wham! feat. George Michael",
+      "Wake Me Up Before You Go-Go - Wham!",
+      "Faith - George Michael",
+      "Freedom! '90 - George Michael",
+      "Last Christmas - Wham!",
+      "Father Figure - George Michael"
+    ],
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO52vEn4"
+  },
+  {
+    month: "Sep",
+    year: 2026,
+    theme: "American Grunge",
+    isPast: false,
+    songs: [
+      "Smells Like Teen Spirit - Nirvana",
+      "All the Small Things - Blink-182",
+      "Pretty Fly (For a White Guy) - The Offspring",
+      "What's My Age Again? - Blink-182",
+      "Come As You Are - Nirvana",
+      "Self Esteem - The Offspring"
+    ],
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evOYNzT4Q"
+  },
+  {
+    month: "Oct",
+    year: 2026,
+    theme: "Broken Up Beatles",
+    isPast: false,
+    songs: [
+      "Imagine - John Lennon",
+      "Live and Let Die - Paul McCartney",
+      "My Sweet Lord - George Harrison",
+      "Photograph - Ringo Starr",
+      "Band on the Run - Paul McCartney",
+      "All Things Must Pass - George Harrison"
+    ],
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0YeTW3"
+  },
+  {
+    month: "Nov",
+    year: 2026,
+    theme: "Coldplay",
+    isPast: false,
+    songs: [
+      "Yellow - Coldplay",
+      "Viva la Vida - Coldplay",
+      "Fix You - Coldplay",
+      "The Scientist - Coldplay",
+      "Paradise - Coldplay",
+      "Clocks - Coldplay"
+    ],
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evOYQKBya"
+  },
+  {
+    month: "Dec",
+    year: 2026,
+    theme: "Bee Gees",
+    isPast: false,
+    songs: [
+      "Stayin' Alive - Bee Gees",
+      "How Deep Is Your Love - Bee Gees",
+      "Tragedy - Bee Gees",
+      "Night Fever - Bee Gees",
+      "Jive Talkin' - Bee Gees",
+      "More Than a Woman - Bee Gees"
+    ],
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evOalnRkG"
+  },
+  {
+    month: "Jan",
+    year: 2027,
+    theme: "ABBA",
+    isPast: false,
+    songs: [
+      "Dancing Queen - ABBA",
+      "Mamma Mia - ABBA",
+      "Gimme! Gimme! Gimme! (A Man After Midnight) - ABBA",
+      "Waterloo - ABBA",
+      "The Winner Takes It All - ABBA",
+      "Take a Chance on Me - ABBA"
+    ],
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evOaAE1wB"
+  },
+  {
+    month: "Feb",
+    year: 2027,
+    theme: "The Clash",
+    isPast: false,
+    songs: [
+      "Rock the Casbah",
+      "Should I stay or should I go",
+      "All lost in the supermarket",
+      "Train in Vain",
+      "London Calling",
+      "Guns of Brixton"
+    ],
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evOb0mRTm"
+  },
+  {
+    month: "Mar",
+    year: 2027,
+    theme: "Space Theme",
+    isPast: false,
+    songs: [
+      "The Eve of the war - Jeff Wayne (War of the Worlds)",
+      "Space Oddity - David Bowie",
+      "Man on the Moon - R.E.M.",
+      "Starlight - Muse",
+      "Mr. Blue Sky - Electric Light Orchestra",
+      "Sky Full of Stars - Coldplay"
+    ],
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evOCy8u9t"
+  }
   ];
 
   const events = _events.map(item => {
@@ -269,10 +481,11 @@ function App() {
     const secondThurs = `${item.month} ${day}${suffix}`;
 
     // const itemDate = new Date(item.year, monthIndex, item.day);
-    const currentDate = new Date();
+    const currentDate = new Date().setHours(0,0,0,0);
     // const isPast = new Date(item.year, monthIndex, item.day) < currentDate;
+    
     const isPast = secondThursday < currentDate;
-    console.log(currentDate);
+    // console.log("" +secondThursday+ " "+" " + currentDate+" "+isPast);
     // console.log(itemDate);
     // console.log(isPast2);
     return { ...item, secondThurs, day, isPast };
