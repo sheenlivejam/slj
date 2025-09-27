@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/slj/static/css/main.febafca2.css",
-    "main.js": "/slj/static/js/main.560ca628.js",
+    "main.js": "/slj/static/js/main.dd0583fb.js",
     "static/js/453.383b4ef5.chunk.js": "/slj/static/js/453.383b4ef5.chunk.js",
     "static/media/SLJ-background.png": "/slj/static/media/SLJ-background.02ce0b13dcf2d4e7ea43.png",
     "static/media/SLJ-poster.png": "/slj/static/media/SLJ-poster.339ddf02deb803b8f26a.png",
@@ -31,11 +31,11 @@
     "static/media/PatCowboy.jpeg": "/slj/static/media/PatCowboy.aaf0449887cbea9ec10a.jpeg",
     "index.html": "/slj/index.html",
     "main.febafca2.css.map": "/slj/static/css/main.febafca2.css.map",
-    "main.560ca628.js.map": "/slj/static/js/main.560ca628.js.map",
+    "main.dd0583fb.js.map": "/slj/static/js/main.dd0583fb.js.map",
     "453.383b4ef5.chunk.js.map": "/slj/static/js/453.383b4ef5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.febafca2.css",
-    "static/js/main.560ca628.js"
+    "static/js/main.dd0583fb.js"
   ]
 }
