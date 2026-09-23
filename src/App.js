@@ -202,29 +202,29 @@ function App() {
       theme: "Fleetwood Mac", 
       isPast: false,
       songs: [
-        "Don't Stop - Fleetwood Mac",
-        "Say You Love Me - Fleetwood Mac",
-        "Monday Morning - Fleetwood Mac",
-        "You Make Loving Fun - Fleetwood Mac",
-        "Rhiannon - Fleetwood Mac",
-        "The Chain - Fleetwood Mac"
+        "Don't Stop (DROP TO C)",
+        "Say You Love Me",
+        "Monday Morning",
+        "You Make Loving Fun",
+        "Rhiannon",
+        "The Chain"
       ],
       spotifyLink: "https://open.spotify.com/playlist/4nMIQCiPObFKvFGNlRVoCL?si=073a318a80884ac7"
     },
     {
       "month": "Nov",
       "year": 2025,
-      "theme": "The Cure",
+      "theme": "ABBA",
       "isPast": false,
       "songs": [
-        "Just Like Heaven - The Cure",
-        "Lovesong - The Cure",
-        "Boys Don't Cry - The Cure",
-        "Close To Me - The Cure",
-        "Friday I'm In Love - The Cure",
-        "Pictures of You - The Cure"
+        "Gimme! Gimme! Gimme! (A Man After Midnight)",
+        "Waterloo",
+        "Dancing Queen",
+        "Mamma Mia",
+        "Money Money Money",
+        "The Winner Takes It All"
       ],
-      "spotifyLink": "https://open.spotify.com/playlist/34hVN963HetM9Wc0rPugcq?si=88228d3fb1aa446c"
+      "spotifyLink": "https://open.spotify.com/playlist/47Kq2TrUHNBPnRnbXTY6TV?si=5ecb23898cf849d0"
     },
     {
       "month": "Dec",
@@ -233,12 +233,14 @@ function App() {
       "isPast": false,
       "songs": [
         "Last Christmas - Wham!",
-        "All I Want For Christmas Is You - Mariah Carey",
+        "White Christmas - Michael Buble",
         "Fairytale of New York - The Pogues",
         "Driving Home for Christmas - Chris Rea",
-        "Do They Know It's Christmas? - Band Aid"
+        "Do They Know It's Christmas? - Band Aid",
+        "Merry Christmas Everyone - Shakin Stevens",
+        "Santa Claus is Coming to Town",
       ],
-      "spotifyLink": "https://open.spotify.com/playlist/37i9dQZF1DX0Yxoavh5qJV"
+      "spotifyLink": "https://open.spotify.com/playlist/5iIIbF9ZiLvqjq0xHLVn4N?si=jZ8AnklqQGqmR8H4qVPakA"
     },
     {
       "month": "Jan",
@@ -247,12 +249,14 @@ function App() {
       "isPast": false,
       "songs": [
         "Every Breath You Take - The Police",
+        "Shape Of My Heart - Sting",
         "Englishman In New York - Sting",
         "Roxanne - The Police",
         "Fields of Gold - Sting",
-        "Message In A Bottle - The Police"
+        "Message In A Bottle - The Police",
+        "Let Your Soul Be Your Pilot - Sting"
       ],
-      "spotifyLink": "https://open.spotify.com/playlist/37i9dQZF1DWWC4fpGJmfQm"
+      "spotifyLink": "https://open.spotify.com/playlist/66cizzCnzFTyIvX7LksAPh?si=7bb878e40752401f"
     },
     {
       "month": "Feb",
@@ -264,9 +268,10 @@ function App() {
         "Changingman - Paul Weller",
         "Broken Stones - Paul Weller",
         "Wild Wood - Paul Weller",
-        "The Eton Rifles - The Jam"
+        "Going Underground - The Jam",
+        "Town Called Malice - The Jam",
       ],
-      "spotifyLink": "https://open.spotify.com/playlist/2RVsODdZW3kK6uBvmp6dcF"
+      "spotifyLink": "https://open.spotify.com/playlist/45L5duUz3ejvyEKNctrphD?si=9b4b3592e9cc499e"
     },
     {
       "month": "Mar",
@@ -274,14 +279,15 @@ function App() {
       "theme": "Pink Floyd and Pink",
       "isPast": false,
       "songs": [
-        "Comfortably Numb - Pink Floyd",
+        "What About Us - Pink",
         "Wish You Were Here - Pink Floyd",
-        "Another Break In the Wall - Pink Floyd",
+        "Another Brick In the Wall - Pink Floyd",
         "Just Give Me a Reason - Pink",
         "Money - Pink Floyd",
-        "So What - Pink"
+        "So What - Pink",
+        "The Great Gig in the Sky - Pink Floyd"
       ],
-      "spotifyLink": "https://open.spotify.com/playlist/6gOYPMDAGCq4eYRUYsMTkB"
+      "spotifyLink": "https://open.spotify.com/playlist/3JxxW4V5iXnAwyGWE9J6tm?si=b7f9d98ad6a24009"
     },
     {
       "month": "Apr",
@@ -289,13 +295,13 @@ function App() {
       "theme": "Country",
       "isPast": false,
       "songs": [
-        "Jolene - Dolly Parton",
+        "Achy Breaky Heart - Billy Ray Cyrus",
         "Take Me Home, Country Roads - John Denver",
-        "Before He Cheats - Carrie Underwood",
-        "Ring of Fire - Johnny Cash",
-        "Wagon Wheel - Darius Rucker"
+        "The Kiss - Faith Hill",
+        "Down to the River to Pray - Alison Krauss",
+        "Stand by Your Man - Tammy Wynette"
       ],
-      "spotifyLink": "https://open.spotify.com/playlist/37i9dQZF1DX13ZzXoot6Jq"
+      "spotifyLink": "https://open.spotify.com/playlist/1xBKhg7px0LjUj6c94MJSs?si=3e095f3317f743fe"
     },
     {
       "month": "May",
@@ -305,11 +311,11 @@ function App() {
       "songs": [
         "Don't You Want Me - The Human League",
         "Sweet Dreams (Are Made of This) - Eurythmics",
-        "Blue Monday - New Order",
+        "Take On Me - A-ha",
         "Tainted Love - Soft Cell",
         "Enjoy the Silence - Depeche Mode"
       ],
-      "spotifyLink": "https://open.spotify.com/playlist/37i9dQZF1DX11KGXrN36GT"
+      "spotifyLink": "https://open.spotify.com/playlist/4fZeSPDP99iCL9XokcSm8p?si=8098666b0300485e"
     },
   {
     month: "Jun",
@@ -322,9 +328,9 @@ function App() {
       "Everybody Hurts - R.E.M.",
       "The One I Love - R.E.M.",
       "It's the End of the World As We Know It (And I Feel Fine) - R.E.M.",
-      "Orange Crush - R.E.M."
+      "Shiny Happy People - R.E.M."
     ],
-    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO22khGL"
+    spotifyLink: "https://open.spotify.com/playlist/31ICyYuvifNat2qNwIZAGQ?si=e355456a6a06420a"
   },
   {
     month: "Jul",
@@ -339,7 +345,7 @@ function App() {
       "Sunday Bloody Sunday - U2",
       "One - U2"
     ],
-    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3O2kHt"
+    spotifyLink: "https://open.spotify.com/playlist/4uX0Qc7qyfFSRutLC9gFid?si=e9947a7921e44cf3"
   },
   {
     month: "Aug",
@@ -347,14 +353,14 @@ function App() {
     theme: "George Michael & Wham",
     isPast: false,
     songs: [
-      "Careless Whisper - Wham! feat. George Michael",
+      "Careless Whisper - 1930's vintage version",
       "Wake Me Up Before You Go-Go - Wham!",
       "Faith - George Michael",
       "Freedom! '90 - George Michael",
-      "Last Christmas - Wham!",
-      "Father Figure - George Michael"
+      "Club Tropicana - Wham!",
+      "I'm Your Man - Wham!"
     ],
-    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO52vEn4"
+    spotifyLink: "https://open.spotify.com/playlist/4RVrrf43Gqt3HgW0Shd319?si=a6bc0269183743d0"
   },
   {
     month: "Sep",
@@ -363,47 +369,61 @@ function App() {
     isPast: false,
     songs: [
       "Smells Like Teen Spirit - Nirvana",
-      "All the Small Things - Blink-182",
-      "Pretty Fly (For a White Guy) - The Offspring",
-      "What's My Age Again? - Blink-182",
-      "Come As You Are - Nirvana",
-      "Self Esteem - The Offspring"
+      "Killing In The Name - Rage Against The Machine",
+      "The Kids Aren't Alright - The Offspring",
+      "Teenage Dirtbag - Wheatus",
+      "Alive - Pearl Jam",
+      "Basket Case - Green Day"
     ],
-    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evOYNzT4Q"
+    spotifyLink: "https://open.spotify.com/playlist/31JhojOavFlTqdp2pp1nGQ?si=671e6de1e5064647"
   },
   {
     month: "Oct",
     year: 2026,
-    theme: "Broken Up Beatles",
+    theme: "Coldplay",
     isPast: false,
     songs: [
-      "Imagine - John Lennon",
-      "Live and Let Die - Paul McCartney",
-      "My Sweet Lord - George Harrison",
-      "Photograph - Ringo Starr",
-      "Band on the Run - Paul McCartney",
-      "All Things Must Pass - George Harrison"
+      "Yellow",
+      "Viva la Vida",
+      "Fix You",
+      "Adventure Of A Lifetime",
+      "Charlie Brown",
+      "Sky Full Of Stars"
     ],
-    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0YeTW3"
+    "spotifyLink": "https://open.spotify.com/playlist/69XpnW3owZyYHVmxfKgxOy?si=e233cbdd921c413e"
   },
   {
     month: "Nov",
     year: 2026,
-    theme: "Coldplay",
+    theme: "Ozzy Ozbourne & Black Sabbath",
     isPast: false,
     songs: [
-      "Yellow - Coldplay",
-      "Viva la Vida - Coldplay",
-      "Fix You - Coldplay",
-      "The Scientist - Coldplay",
-      "Paradise - Coldplay",
-      "Clocks - Coldplay"
+      "Iron Man",
+      "War Pigs",
+      "Crazy Train",
+      "No More Tears",
+      "Paranoid",
     ],
-    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evOYQKBya"
+    spotifyLink: "https://open.spotify.com/playlist/4ICQv0P8OrTIaJCTJ3zkgC?si=0a535f44b6624183"
   },
   {
     month: "Dec",
     year: 2026,
+    theme: "Christmas",
+    isPast: false,
+    songs: [
+      "TBD - Tommy D in charge",
+      "..",
+      "..",
+      "..",
+      "..",
+      ".."
+    ],
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evOalnRkG"
+  },
+  {
+    month: "Jan",
+    year: 2027,
     theme: "Bee Gees",
     isPast: false,
     songs: [
@@ -415,21 +435,6 @@ function App() {
       "More Than a Woman - Bee Gees"
     ],
     spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evOalnRkG"
-  },
-  {
-    month: "Jan",
-    year: 2027,
-    theme: "ABBA",
-    isPast: false,
-    songs: [
-      "Dancing Queen - ABBA",
-      "Mamma Mia - ABBA",
-      "Gimme! Gimme! Gimme! (A Man After Midnight) - ABBA",
-      "Waterloo - ABBA",
-      "The Winner Takes It All - ABBA",
-      "Take a Chance on Me - ABBA"
-    ],
-    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evOaAE1wB"
   },
   {
     month: "Feb",
@@ -460,6 +465,51 @@ function App() {
       "Sky Full of Stars - Coldplay"
     ],
     spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evOCy8u9t"
+  },
+  {
+    month: "Apr",
+    year: 2027,
+    theme: "The Cure",
+    isPast: false,
+    songs: [
+      "Just Like Heaven - The Cure",
+      "Lovesong - The Cure",
+      "Boys Don't Cry - The Cure",
+      "Close To Me - The Cure",
+      "Friday I'm In Love - The Cure",
+      "Pictures of You - The Cure"
+    ],
+    "spotifyLink": "https://open.spotify.com/playlist/34hVN963HetM9Wc0rPugcq?si=88228d3fb1aa446c"
+  },
+    {
+    month: "May",
+    year: 2027,
+    theme: "Female Icons",
+    isPast: false,
+    songs: [
+      "TBD e.g....",
+      "Tina Turner",
+      "Madonna",
+      "Spice Girls",
+      "Janis Joplin",
+      "Swift"
+    ],
+    "spotifyLink": "https://open.spotify.com/playlist/2w3oh7F0cA5YrHTuSbXRpB?si=af810a759ad14d0a"
+  },
+  {
+    month: "Jun",
+    year: 2027,
+    theme: "Broken Up Beatles",
+    isPast: false,
+    songs: [
+      "Imagine - John Lennon",
+      "Live and Let Die - Paul McCartney",
+      "My Sweet Lord - George Harrison",
+      "Photograph - Ringo Starr",
+      "Band on the Run - Paul McCartney",
+      "All Things Must Pass - George Harrison"
+    ],
+    spotifyLink: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0YeTW3"
   }
   ];
 
@@ -613,7 +663,7 @@ function App() {
                    @The Home Guard Club House<br />
                    76a Richmond Park Road</p>
                 <p><strong>Entrance:</strong><br />
-                   Members - Free, Guess £3 </p>
+                   Members - Free, Guess £5 </p>
               </div>
               <div className="social-links">
                 <p>Instagram - @sheen_livejam</p>
