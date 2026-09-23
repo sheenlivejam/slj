@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import poster from './SLJ-poster.png'
 import PhotoGallery from './PhotoGallery';
+import { sep2026Photos } from './photoData';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -602,6 +603,45 @@ function App() {
 
   const selectedEvent = getSelectedEventDetails();
 
+  // The next jam that hasn't happened yet (used by the home page panel).
+  const nextEvent = events.find(event => !event.isPast);
+
+  // Hand-picked highlights from the Sep 2026 shoot, shown at the bottom of
+  // the Home page below the schedule.
+  const HOME_PAGE_PHOTO_NUMBERS = [13, 17, 18, 20, 23, 24, 26, 29, 30, 33];
+  const homePagePhotos = HOME_PAGE_PHOTO_NUMBERS
+    .map((num) => sep2026Photos.find((photo) => photo.num === num))
+    .filter(Boolean);
+
+  // Single source of truth for an event's details: used by the Schedule
+  // section and embedded at the bottom of the home page.
+  const renderScheduleDetail = (event, className = 'schedule-section') => (
+    <div className={className}>
+      <h2>{event.secondThurs} - {event.theme}</h2>
+      <div className="song-list">
+        <h3>Set List:</h3>
+        <ul>
+          {event.songs.map((song, index) => (
+            <li key={index}>{song}</li>
+          ))}
+        </ul>
+        <a
+          href={event.spotifyLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="spotify-link"
+        >
+          Listen on Spotify
+        </a>
+      </div>
+      <div className="event-details-mini">
+        <p><strong>Timings:</strong> 7-8:30pm (open mic), 8:30-9:30pm (jam), 9:30-10:30pm (open mic)</p>
+        <p><strong>Location:</strong> The Home Guard Club House, 76a Richmond Park Road</p>
+        <p><strong>Entrance:</strong> Members - Free, Guests £5</p>
+      </div>
+    </div>
+  );
+
   return (
     <div className="app-container">
       <div className="sidebar">
@@ -663,7 +703,7 @@ function App() {
                    @The Home Guard Club House<br />
                    76a Richmond Park Road</p>
                 <p><strong>Entrance:</strong><br />
-                   Members - Free, Guess £5 </p>
+                   Members - Free, Guests £5 </p>
               </div>
               <div className="social-links">
                 <p>Instagram - @sheen_livejam</p>
@@ -678,46 +718,44 @@ function App() {
                   >
                   Spotify - All Jam songs to date
                 </a>
-                <a 
-                  href="https://open.spotify.com/playlist/1EFiM08lezscybvXPtxT1w?si=845e13d8bc844ece"
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="spotify-link"
-                  >
-                  Spotify - Upcoming Jam set
-                </a>
+                {nextEvent && (
+                  <a 
+                    href={nextEvent.spotifyLink}
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="spotify-link"
+                    >
+                    Spotify - Upcoming Jam set
+                  </a>
+                )}
               </div>
             </div>
+
+            {nextEvent && (
+              <div className="next-jam-embed">
+                <h3 className="next-jam-heading">Next Jam</h3>
+                <div className="next-jam-frame">
+                  {renderScheduleDetail(nextEvent, 'schedule-section embedded')}
+                </div>
+              </div>
+            )}
+
+            {homePagePhotos.length > 0 && (
+              <div className="home-photos-grid">
+                {homePagePhotos.map((photo, index) => (
+                  <img
+                    key={index}
+                    src={photo.src}
+                    alt=""
+                    className="home-photo"
+                  />
+                ))}
+              </div>
+            )}
           </div>
         )}
         
-        {activeSection === 'schedule' && selectedEvent && (
-          <div className="schedule-section">
-            {/* <h2>{selectedEvent.month} {selectedEvent.year} - {selectedEvent.theme}</h2> */}
-            <h2>{selectedEvent.secondThurs} - {selectedEvent.theme}</h2>
-            <div className="song-list">
-              <h3>Set List:</h3>
-              <ul>
-                {selectedEvent.songs.map((song, index) => (
-                  <li key={index}>{song}</li>
-                ))}
-              </ul>
-              <a 
-                href={selectedEvent.spotifyLink} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="spotify-link"
-              >
-                Listen on Spotify
-              </a>
-            </div>
-            <div className="event-details-mini">
-              <p><strong>Timings:</strong> 7-8:30pm (open mic), 8:30-9:30pm (jam), 9:30-10:30pm (open mic)</p>
-              <p><strong>Location:</strong> The Home Guard Club House, 76a Richmond Park Road</p>
-              <p><strong>Entrance:</strong> Members - Free, Guests £3</p>
-            </div>
-          </div>
-        )}
+        {activeSection === 'schedule' && selectedEvent && renderScheduleDetail(selectedEvent)}
         
         {activeSection === 'previous' && (
           <div className="previous-dates-section">

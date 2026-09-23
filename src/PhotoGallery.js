@@ -26,10 +26,12 @@ import Dancing from './photos/Dancing.jpeg';
 import LuAlexJon from './photos/LuAlexJon.jpeg';
 import Audience from './photos/Audience.jpeg';
 import BrianAndBand from './photos/BrianAndBand.jpeg';
+import { sep2026Photos } from './photoData';
 
 const PhotoGallery = () => {
   // Create an array of photo objects with imported images and filenames
   const photos = [
+    ...sep2026Photos,
     { src: HeyJude2, name: 'HeyJude2.jpeg' },
     { src: Cowboys, name: 'Cowboys.jpeg' },
     { src: DennisArmond, name: 'DennisArmond.jpeg' },
@@ -90,17 +92,19 @@ const PhotoGallery = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {photos.map((photo, index) => {
           const title = createTitleFromFilename(photo.name);
-          
+
           return (
             <div key={index} className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img 
+              <img
                 src={photo.src}
                 alt={title}
                 className="w-full h-64 object-cover"
               />
-              <div className="p-4 bg-white">
-                <h3 className="font-semibold text-lg">{title}</h3>
-              </div>
+              {!photo.noTitle && (
+                <div className="p-4 bg-white">
+                  <h3 className="font-semibold text-lg">{title}</h3>
+                </div>
+              )}
             </div>
           );
         })}
