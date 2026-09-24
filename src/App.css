@@ -371,6 +371,53 @@ body {
   width: 100%;
   height: 220px;
   object-fit: cover;
+  /* Bias toward the top of the frame so portrait shots keep faces in
+     view instead of being centre-cropped through the head. */
+  object-position: center 20%;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Photo Gallery (Photos page) */
+.photo-gallery {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.photo-gallery-heading {
+  color: #e8971a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.photo-card {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: rgba(26, 26, 26, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(232, 151, 26, 0.3);
+}
+
+.photo-card-image {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  /* Bias toward the top of the frame so portrait shots keep faces in
+     view instead of being centre-cropped through the head. */
+  object-position: center 20%;
 }

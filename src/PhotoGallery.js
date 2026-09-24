@@ -76,35 +76,29 @@ const PhotoGallery = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold mb-6 text-center">Photos</h2>
-      
-      <a 
+    <div className="photo-gallery">
+      <h2 className="photo-gallery-heading">Photos</h2>
+
+      <a
         href="https://www.instagram.com/sheen_livejam?igsh=MWJmY2JvbWQwYnFpYQ%3D%3D&utm_source=qr"
-        target="_blank" 
-        rel="noopener noreferrer" 
+        target="_blank"
+        rel="noopener noreferrer"
         className="insta-link"
         >
         See Instagram @sheen_livejam for more photos and videos
       </a>
-      <br/>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+      <div className="photo-grid">
         {photos.map((photo, index) => {
           const title = createTitleFromFilename(photo.name);
 
           return (
-            <div key={index} className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div key={index} className="photo-card">
               <img
                 src={photo.src}
                 alt={title}
-                className="w-full h-64 object-cover"
+                className="photo-card-image"
               />
-              {!photo.noTitle && (
-                <div className="p-4 bg-white">
-                  <h3 className="font-semibold text-lg">{title}</h3>
-                </div>
-              )}
             </div>
           );
         })}

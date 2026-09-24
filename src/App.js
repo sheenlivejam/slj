@@ -576,14 +576,39 @@ function App() {
     console.log(selectedDate);
   }, [selectedDate, events]);
 
+  // Support deep-linking straight to a page via a URL hash, e.g.
+  // https://sheenlivejam.co.uk/slj/#poster or .../slj/#schedule
+  // ("#schedule" opens on the next upcoming jam, same as the nav link).
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '').toLowerCase();
+    if (hash === 'poster') {
+      setActiveSection('poster');
+    } else if (hash === 'schedule') {
+      setActiveSection('schedule');
+      const upcomingEvent = events.find(event => !event.isPast);
+      if (upcomingEvent) {
+        setSelectedDate(`${upcomingEvent.month} ${upcomingEvent.year}`);
+      }
+    }
+    // Only meant to run once, against whatever hash the page loaded with.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Keep the URL hash in sync with plain (non-schedule) sections so the
+  // current page can always be shared as a direct link.
+  const navigateTo = (section) => {
+    setActiveSection(section);
+    window.location.hash = section;
+  };
 
   const handleScheduleClick = () => {
     setShowScheduleSubmenu(!showScheduleSubmenu);
     setActiveSection('schedule');
-    
+    window.location.hash = 'schedule';
+
     // Find next upcoming event
     const upcomingEvent = events.find(event => !event.isPast);
-    
+
     if (upcomingEvent) {
       setSelectedDate(`${upcomingEvent.month} ${upcomingEvent.year}`);
     }
@@ -592,6 +617,7 @@ function App() {
   const handleDateClick = (month, year) => {
     setSelectedDate(`${month} ${year}`);
     setActiveSection('schedule');
+    window.location.hash = 'schedule';
   };
 
   const getSelectedEventDetails = () => {
@@ -608,7 +634,7 @@ function App() {
 
   // Hand-picked highlights from the Sep 2026 shoot, shown at the bottom of
   // the Home page below the schedule.
-  const HOME_PAGE_PHOTO_NUMBERS = [13, 17, 18, 20, 23, 24, 26, 29, 30, 33];
+  const HOME_PAGE_PHOTO_NUMBERS = [7, 10, 13, 17, 18, 20, 23, 26, 28, 33];
   const homePagePhotos = HOME_PAGE_PHOTO_NUMBERS
     .map((num) => sep2026Photos.find((photo) => photo.num === num))
     .filter(Boolean);
@@ -647,7 +673,7 @@ function App() {
       <div className="sidebar">
         <h2 className="app-title">Sheen Live Jam</h2>
         <nav className="nav-menu">
-          <div className="nav-item" onClick={() => setActiveSection('home')}>Home</div>
+          <div className="nav-item" onClick={() => navigateTo('home')}>Home</div>
           <div className="nav-item" onClick={handleScheduleClick}>Schedule</div>
           {showScheduleSubmenu && (
             <div className="submenu">
@@ -663,9 +689,9 @@ function App() {
               ))}
             </div>
           )}
-          <div className="nav-item" onClick={() => setActiveSection('previous')}>Previous Dates</div>
-          <div className="nav-item" onClick={() => setActiveSection('photos')}>Photos</div>
-          <div className="nav-item" onClick={() => setActiveSection('poster')}>Poster</div>
+          <div className="nav-item" onClick={() => navigateTo('previous')}>Previous Dates</div>
+          <div className="nav-item" onClick={() => navigateTo('photos')}>Photos</div>
+          <div className="nav-item" onClick={() => navigateTo('poster')}>Poster</div>
         </nav>
       </div>
       

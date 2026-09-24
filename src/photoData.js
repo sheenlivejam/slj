@@ -11,7 +11,7 @@ const loadPhotoFolder = (context) => {
       return { key, num: match ? parseInt(match[1], 10) : 0 };
     })
     .sort((a, b) => a.num - b.num)
-    .map(({ key, num }) => ({ src: context(key), name: key.replace('./', ''), num, noTitle: true }));
+    .map(({ key, num }) => ({ src: context(key), name: key.replace('./', ''), num }));
 };
 
 export const sep2026Photos = loadPhotoFolder(
