@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/slj/static/css/main.600b9734.css",
-    "main.js": "/slj/static/js/main.8e7eae02.js",
+    "main.css": "/slj/static/css/main.23f74721.css",
+    "main.js": "/slj/static/js/main.96155138.js",
     "static/js/453.46289356.chunk.js": "/slj/static/js/453.46289356.chunk.js",
     "static/media/SLJ-background.png": "/slj/static/media/SLJ-background.02ce0b13dcf2d4e7ea43.png",
     "static/media/Sheen Live Jam - 12 of 33.jpeg": "/slj/static/media/Sheen Live Jam - 12 of 33.0cbd0b55add5a6c54ba1.jpeg",
@@ -63,12 +63,12 @@
     "static/media/SoloPiano.jpeg": "/slj/static/media/SoloPiano.36a95ccc9c7876169c69.jpeg",
     "static/media/PatCowboy.jpeg": "/slj/static/media/PatCowboy.aaf0449887cbea9ec10a.jpeg",
     "index.html": "/slj/index.html",
-    "main.600b9734.css.map": "/slj/static/css/main.600b9734.css.map",
-    "main.8e7eae02.js.map": "/slj/static/js/main.8e7eae02.js.map",
+    "main.23f74721.css.map": "/slj/static/css/main.23f74721.css.map",
+    "main.96155138.js.map": "/slj/static/js/main.96155138.js.map",
     "453.46289356.chunk.js.map": "/slj/static/js/453.46289356.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.600b9734.css",
-    "static/js/main.8e7eae02.js"
+    "static/css/main.23f74721.css",
+    "static/js/main.96155138.js"
   ]
 }
